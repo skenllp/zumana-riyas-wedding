@@ -256,8 +256,8 @@ img, svg { display: block; max-width: 100%; }
   justify-content: center;
   background-color: #0d0d0d;
   background-image:
-    linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.15) 45%, rgba(0,0,0,.55) 100%),
-    url('../assets/Dreamy%20Sunset%20Mosque%20Wedding%20Portrait.png');
+    linear-gradient(to bottom, rgba(13,10,8,0.5) 0%, rgba(13,10,8,0.25) 45%, rgba(13,10,8,0.65) 100%),
+    url('../assets/image.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -267,6 +267,32 @@ img, svg { display: block; max-width: 100%; }
 .gate.is-open {
   pointer-events: none;
   opacity: 0;
+}
+
+.gate__image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gate__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.gate__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(13,10,8,0.5) 0%, rgba(13,10,8,0.2) 45%, rgba(13,10,8,0.6) 100%),
+    radial-gradient(ellipse at center, transparent 30%, rgba(13,10,8,0.5) 100%);
+  z-index: 0;
 }
 
 /* Blur layer */
@@ -467,7 +493,7 @@ img, svg { display: block; max-width: 100%; }
   overflow: hidden;
   position: relative;
   background-color: #0d0d0d;
-  background-image: url('../assets/Dreamy%20Sunset%20Mosque%20Wedding%20Portrait.png');
+  background-image: url('../assets/image.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -494,8 +520,8 @@ img, svg { display: block; max-width: 100%; }
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.15) 40%, rgba(0,0,0,.5) 100%),
-    radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,.45) 100%);
+    linear-gradient(to bottom, rgba(13,10,8,0.48) 0%, rgba(13,10,8,0.22) 40%, rgba(13,10,8,0.58) 100%),
+    radial-gradient(ellipse at center, transparent 20%, rgba(13,10,8,0.5) 100%);
   z-index: 1;
 }
 
